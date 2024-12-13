@@ -1,0 +1,220 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-color: #fff
+}
+
+body {
+    font-family: "Comfortaa", cursive;
+    background-color: #272b30;
+}
+
+.bg img {
+    height: 30vh;
+    object-fit: cover;
+}
+
+nav img {
+    width: 40px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Nerko One", cursive;
+
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 100;
+    color: var(--white-color);
+}
+
+.navbar-nav .nav-link.active {
+    color: #09c;
+}
+
+.navbar-nav .nav-link {
+    font-size: 12px;
+    transition: all 0.5s;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #09c;
+}
+
+.navbar>.container {
+    width: 75%;
+    background-color: #3A497B;
+    padding: 8px 12px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px 0px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+.card-body .btn {
+    background-color: rgb(13, 110, 253);
+    font-size: 12px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.card img {
+    padding: 16px;
+    object-fit: cover;
+}
+
+.card {
+    background-color: #272B30;
+}
+
+.card span {
+    font-size: 11px;
+}
+
+.card span {
+    padding: 3px 6px;
+    background-color: #32383e;
+}
+
+.card .card-footer {
+    padding: 8px 16px;
+    background-color: rgba(33, 37, 41, 0.03);
+}
+
+.card {
+    filter: grayscale(0.7);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.card .card-text {
+    margin-bottom: 16px;
+}
+
+.card:hover {
+    filter: grayscale(0);
+    transform: scale(1.05);
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+
+
+
+.details i {
+    color: #808080;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.details i:hover {
+    color: var(--white-color);
+}
+
+.details h3 {
+    font-size: 28px;
+}
+
+.game-details p span {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.game-details p.desc {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.game-details .btn {
+    font-size: 14px;
+}
+
+.catogery,
+.details {
+    min-height: 100vh;
+}
+
+.loading {
+    background-color: #272B30;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-bottom: 4px solid #FF3D00;
+    border-left: 4px solid transparent;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.carousel i {
+    font-size: 36px;
+    color: white;
+}
+
+
+@media screen and (max-width:767px) {
+    .navbar>.container {
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        text-align: center;
+    }
+
+    .details .col-md-8 {
+        margin-top: 24px;
+    }
+}

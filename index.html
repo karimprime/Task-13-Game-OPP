@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/logo-sm.png" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nerko+One&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>GameOOP</title>
+</head>
+
+<body>
+  <!-- =============================loading spinner============================================ -->
+  <div class="loading d-none">
+    <span class="loader"></span>
+  </div>
+
+
+  <!--========================== categorey secrion=========================================================== -->
+  <section class="catogery">
+    <div class="bg">
+      <img src="./images/wraper.png" alt="bg-img" class="w-100">
+    </div>
+
+    <nav class="navbar navbar-expand-lg position-sticky top-0 z-3 ">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#"><img src="./images/logo-sm.png" alt="logo">
+          <h1 class="mb-0 ms-2"> Game Reviews
+          </h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active  text-uppercase" aria-current="page" href="#">mmorpg</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link  text-uppercase" href="#">sailing</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link  text-uppercase" href="#">permadeath</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link  text-uppercase" href="#">superhero</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link  text-uppercase" href="#">pixel</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <main class="my-5">
+      <div class="container">
+        <div class="row gy-4 row-" id="rowCatogery">
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <!-- ==========================details section============================================================= -->
+  <section class="details  pt-4 d-none ">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2 class="text-white">Details Game</h2>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="row pt-4" id='datailsData'>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>
